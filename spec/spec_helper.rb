@@ -7,7 +7,7 @@ Bundler.require(:default, :test)
 
 require 'simplecov'
 SimpleCov.start
-require File.join(File.dirname(__FILE__), '..', 'application')
+require File.join(File.dirname(__FILE__), '../app')
 require 'rspec'
 
 set :environment, :test

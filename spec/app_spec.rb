@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Application do
+describe App do
   
   it "does something" do
     

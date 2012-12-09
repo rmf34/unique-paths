@@ -3,7 +3,7 @@ require 'bundler'
 Bundler.require
 require 'sinatra'
 
-# class App < Sinatra::Base
+class App < Sinatra::Base
   get '/' do
     erb :index
   end
@@ -34,5 +34,4 @@ require 'sinatra'
   def unique_paths_square(side) 
     (factorial(side * 2)) / (factorial(side) ** 2)
   end
-
-# end
+end
