@@ -6,7 +6,7 @@ def factorial(n)
   end
 end
 
-def unique_paths_square(side) 
+def unique_paths_square(side)
   (factorial(side * 2)) / (factorial(side) ** 2)
 end
 
