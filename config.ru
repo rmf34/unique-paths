@@ -5,4 +5,4 @@ require 'bundler'
 Bundler.require
 
 require './app'
-App.run!
+run App
