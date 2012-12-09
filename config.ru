@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './square_grid_path'
+require './app'
 run App
