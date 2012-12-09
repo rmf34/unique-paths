@@ -7,8 +7,8 @@ get '/' do
 end
 
 post '/square' do
-  ans = unique_paths_square_grid(eval(params[:number]))
-  'Number of unique paths: ' + ans.to_s
+  ans = unique_paths_square(eval(params[:number])).to_s
+  'Number of unique paths: ' + ans
 end
 
 post '/rectangular' do
@@ -18,20 +18,22 @@ end
 
 
 
-def factorial_recursive(n)
+
+
+def factorial(n)
   if n == 0
     return 1
   else
-    factorial_recursive(n-1) * n
+    factorial(n - 1) * n
   end
 end
 
 
 def unique_paths(x,y) # works for grid of dimensions x, y 
-  (factorial_recursive(x + y)) / (factorial_recursive(x) * factorial_recursive(y))
+  (factorial(x + y)) / (factorial(x) * factorial(y))
 end
 
 
-def unique_paths_square_grid(side) 
-  (factorial_recursive(side * 2)) / (factorial_recursive(side) ** 2)
+def unique_paths_square(side) 
+  (factorial(side * 2)) / (factorial(side) ** 2)
 end

@@ -6,3 +6,10 @@
 	margin:0 auto;
 	width: 960px;
 }
+
+#footer{
+	padding-left:300px;
+	position:fixed;
+	bottom:50px;
+	margin:0 auto;
+}
