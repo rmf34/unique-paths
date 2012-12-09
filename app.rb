@@ -6,7 +6,7 @@ Bundler.require
 require 'sinatra'
 require './lib/unique_paths'
 
-class App# < Sinatra::Base
+class App
 
   get '/' do
     erb :index
@@ -14,12 +14,16 @@ class App# < Sinatra::Base
 
   post '/square' do
     @ans = unique_paths_square(eval(params[:number]))
-    erb :answer
+    @num = params[:number]
+    
+    erb :square
   end
 
   post '/rectangle' do
     @ans = unique_paths(eval(params[:x]), eval(params[:y]))
-    erb :answer
+    @num = params
+    
+    erb :rectangle
   end
   
 end

@@ -1,13 +1,25 @@
-<h2>Unique Paths (square grid)</h2>
-<form action="/square" method="post">
-  side: <input type="text" name="number">
-  <input type="submit">
-</form>
+<p>A common graph theory problem asks one to calculate the number of unique paths for a robot or toy to move from one corner of a square grid to the opposite corner. The robot can move up, down, left or right, but it cannot visit a square more than once. Please note that the robot moves along the edges of the grid, not in the whitespace.</p>
 
-<br />
-<h2>Unique Paths (rectangular grid)</h2>
-<form action="/rectangle" method="post">
-  x: <input type="text" name="x">
-  y: <input type="text" name="y">
-  <input type="submit">
-</form>
+<p>A good way to start approaching this problem is to trace through the simple solutions and figure out the pattern. I'd suggest starting with a two by two grid like this:</p>
+
+<img src="path.png">
+
+<div id="calculators">
+  <div id="square_grid" class="left">
+    <h2>Unique Paths (square grid)</h2>
+    <form action="/square" method="post">
+      sides: <input type="text" name="number">
+      <input type="submit">
+    </form>
+  </div>
+
+
+  <div id="rectangular_grid" class="right">
+    <h2>Unique Paths (rectangular grid)</h2>
+    <form action="/rectangle" method="post">
+      x: <input type="text" name="x">
+      y: <input type="text" name="y">
+      <input type="submit">
+    </form>
+  </div>
+</div>
