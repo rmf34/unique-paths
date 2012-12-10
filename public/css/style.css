@@ -2,7 +2,6 @@
 		GLOBAL
 ***************************/
 
-
 *{
 	font-family:'Helvetica Neue', helvetica, arial, sans-serif;
 }
@@ -28,10 +27,11 @@ p{
 	font-family:Georgia, times, serif;
 	font-size:1.1em;
 	line-height:1.6em;
+	text-align:justify;
 }
 
-#footer{
-	margin-top:200px;
+#footer p{
+	margin-top:250px;
 	text-align:center;
 }
 
@@ -59,12 +59,9 @@ p a:hover{
 	margin-top:150px;
 }
 
-form{
-	font-size:1.2em;
-	margin:25px 10px;
-}
 
 input:not([type=submit]):not([type=file]) {
+	font-size:1.2em;
    border: 2px solid #ddd; 
 	    -webkit-box-shadow: 
 	      inset 0 0 8px  rgba(0,0,0,0.1),
@@ -78,4 +75,12 @@ input:not([type=submit]):not([type=file]) {
 	    padding: 10px;
 	    background: rgba(255,255,255,0.5);
 	    margin: 0 0 10px 0;
+}
+
+/***************************
+		ANSWER
+***************************/
+
+.answer{
+	margin-top:40px;
 }
