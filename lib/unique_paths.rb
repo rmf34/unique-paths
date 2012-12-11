@@ -13,3 +13,6 @@ end
 def unique_paths(x,y) # works for grid of dimensions x, y 
   (factorial(x + y)) / (factorial(x) * factorial(y))
 end
+
+# I got this from googling and also from plugging it into the standard formula for combinations often abbreviated as nCr
+# n! / (r! (n - r)!)
